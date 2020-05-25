@@ -1,7 +1,7 @@
 # AppiumFramework
 
 
-Required Dependenices in Maven
+Required Dependenices in Maven are
 TestNg, Selenium WebDriver, Junit, Javaclient, Appium, Java 1.8 Properties
 
 Runs on connected real device Samsung with Android version 9

@@ -12,4 +12,4 @@ Has a ToroPageClass which uses PageFactory framework for adding all the elements
 
 Has a ToroBaseClass which has all the DesiredCapabiltiies of Android app
 
-Has a ToroAndroidApp class which has a main class
+Has a ToroAndroidApp class which has a main method and runs the application

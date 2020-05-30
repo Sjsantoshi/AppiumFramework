@@ -15,8 +15,10 @@ public class ToroAndroidApp extends ToroBaseClass
 	@Test
 	public void Login() throws InterruptedException, IOException
 	{
+		service = startAppiumServer();
+		startEmulator();
+		Thread.sleep(6000);
 		AndroidDriver<AndroidElement> driver = capabilities("appApk");
-		
 		ToroPageClass tp = new ToroPageClass(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//Clicks on English language and continues with Tutorial screens
@@ -36,6 +38,8 @@ public class ToroAndroidApp extends ToroBaseClass
 		//Search for springrole and login there
 		tp.search.sendKeys("Springrole");
 		tp.tapCompany.click();
+		
+		service.stop();
 	}
 
 }

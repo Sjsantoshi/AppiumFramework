@@ -15,6 +15,7 @@ public class ToroAndroidApp extends ToroBaseClass
 	@Test
 	public void Login() throws InterruptedException, IOException
 	{
+		//Test
 		service = startAppiumServer();
 		startEmulator();
 		Thread.sleep(6000);

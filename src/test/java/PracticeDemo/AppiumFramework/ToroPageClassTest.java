@@ -7,9 +7,9 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class ToroPageClass {
+public class ToroPageClassTest {
 	
-	public ToroPageClass(AppiumDriver driver)
+	public ToroPageClassTest(AppiumDriver driver)
 	{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}

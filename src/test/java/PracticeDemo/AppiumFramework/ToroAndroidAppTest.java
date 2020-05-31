@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
-public class ToroAndroidApp extends ToroBaseClass
+public class ToroAndroidAppTest extends ToroBaseTest
 {
 	@Test
 	public void Login() throws InterruptedException, IOException
@@ -20,11 +20,11 @@ public class ToroAndroidApp extends ToroBaseClass
 		startEmulator();
 		Thread.sleep(6000);
 		AndroidDriver<AndroidElement> driver = capabilities("appApk");
-		ToroPageClass tp = new ToroPageClass(driver);
+		ToroPageClassTest tp = new ToroPageClassTest(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//Clicks on English language and continues with Tutorial screens
 		tp.getLanguageScreen().click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		tp.Tutorial1.click();
 		tp.Tutorial2.click();
 		tp.Tutorial3.click();

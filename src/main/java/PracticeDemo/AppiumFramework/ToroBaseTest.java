@@ -15,7 +15,7 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 
-public class ToroBaseClass {
+public class ToroBaseTest {
 	
 	public static AppiumDriverLocalService service;
 	
@@ -31,6 +31,7 @@ public class ToroBaseClass {
 		//C:\Users\Springworks\eclipse-workspace1\AppiumFramework\src\main\java\resources\startEmulator.bat
 		Runtime.getRuntime().exec(System.getProperty("user.dir")+ "\\src\\main\\java\\resources\\startEmulator.bat");
 		Thread.sleep(10000);
+		
 	}
 
 	public static AndroidDriver<AndroidElement> capabilities(String appApk) throws IOException, InterruptedException

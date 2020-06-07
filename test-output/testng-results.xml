@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48256" started-at="2020-05-30T19:02:44 IST" finished-at="2020-05-30T19:03:32 IST">
+  <suite name="Default suite" duration-ms="72243" started-at="2020-06-07T11:41:52 IST" finished-at="2020-06-07T11:43:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48256" started-at="2020-05-30T19:02:44 IST" finished-at="2020-05-30T19:03:32 IST">
-      <class name="PracticeDemo.AppiumFramework.ToroAndroidApp">
-        <test-method status="PASS" signature="Login()[pri:0, instance:PracticeDemo.AppiumFramework.ToroAndroidApp@12f41634]" name="Login" duration-ms="48187" started-at="2020-05-30T19:02:44 IST" finished-at="2020-05-30T19:03:32 IST">
+    <test name="Default test" duration-ms="72243" started-at="2020-06-07T11:41:52 IST" finished-at="2020-06-07T11:43:04 IST">
+      <class name="PracticeDemo.AppiumFramework.ToroAndroidAppTest">
+        <test-method status="PASS" signature="Tutorial()[pri:0, instance:PracticeDemo.AppiumFramework.ToroAndroidAppTest@3578436e]" name="Tutorial" duration-ms="72169" started-at="2020-06-07T11:41:52 IST" finished-at="2020-06-07T11:43:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- PracticeDemo.AppiumFramework.ToroAndroidApp -->
+        </test-method> <!-- Tutorial -->
+      </class> <!-- PracticeDemo.AppiumFramework.ToroAndroidAppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

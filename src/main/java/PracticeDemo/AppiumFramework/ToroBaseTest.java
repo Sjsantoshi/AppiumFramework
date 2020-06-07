@@ -18,6 +18,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 public class ToroBaseTest {
 	
 	public static AppiumDriverLocalService service;
+	public AndroidDriver<AndroidElement> driver ;
 	
 	public AppiumDriverLocalService startAppiumServer()
 	{
@@ -30,8 +31,7 @@ public class ToroBaseTest {
 	{
 		//C:\Users\Springworks\eclipse-workspace1\AppiumFramework\src\main\java\resources\startEmulator.bat
 		Runtime.getRuntime().exec(System.getProperty("user.dir")+ "\\src\\main\\java\\resources\\startEmulator.bat");
-		Thread.sleep(10000);
-		
+		Thread.sleep(10000);	
 	}
 
 	public static AndroidDriver<AndroidElement> capabilities(String appApk) throws IOException, InterruptedException
@@ -44,14 +44,15 @@ public class ToroBaseTest {
 		File app = new File(f, (String)prop.get(appApk));
 
 		DesiredCapabilities dc = new DesiredCapabilities();
-		String realDevice = (String)prop.get("realDevice");
-		if(realDevice.contains("Pixel"))
+		//String realDevice = (String)prop.get("realDevice");
+		String device = System.getProperty("deviceName");
+		if(device.contains("Pixel"))
 		{
 			startEmulator();
+			Thread.sleep(6000);
 		}
 		
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, realDevice);
-		
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		
 		String appPackage = (String)prop.get("appPackage");
@@ -62,10 +63,6 @@ public class ToroBaseTest {
 		
 	//	dc.setCapability(MobileCapabilityType.APP ,fs.getAbsolutePath());
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),dc);
-		return driver;
-		
-		
-		
-		
+		return driver;	
 	}
 }

@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="66341" started-at="2020-05-31T11:44:56 IST" finished-at="2020-05-31T11:46:03 IST">
+  <suite name="Surefire suite" duration-ms="63784" started-at="2020-06-07T11:45:25 IST" finished-at="2020-06-07T11:46:29 IST">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="66341" started-at="2020-05-31T11:44:56 IST" finished-at="2020-05-31T11:46:03 IST">
+    <test name="Surefire test" duration-ms="63784" started-at="2020-06-07T11:45:25 IST" finished-at="2020-06-07T11:46:29 IST">
       <class name="PracticeDemo.AppiumFramework.ToroAndroidAppTest">
-        <test-method status="PASS" signature="Login()[pri:0, instance:PracticeDemo.AppiumFramework.ToroAndroidAppTest@2a556333]" name="Login" duration-ms="66249" started-at="2020-05-31T11:44:56 IST" finished-at="2020-05-31T11:46:03 IST">
+        <test-method status="PASS" signature="Tutorial()[pri:0, instance:PracticeDemo.AppiumFramework.ToroAndroidAppTest@2a556333]" name="Tutorial" duration-ms="63747" started-at="2020-06-07T11:45:25 IST" finished-at="2020-06-07T11:46:29 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
+        </test-method> <!-- Tutorial -->
       </class> <!-- PracticeDemo.AppiumFramework.ToroAndroidAppTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

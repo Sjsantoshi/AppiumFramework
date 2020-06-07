@@ -5,7 +5,7 @@
     <classes>
       <class name="PracticeDemo.AppiumFramework.ToroAndroidAppTest">
         <methods>
-          <include name="Login"/>
+          <include name="Tutorial"/>
         </methods>
       </class> <!-- PracticeDemo.AppiumFramework.ToroAndroidAppTest -->
     </classes>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="ToroMobileAppTest(failed)">
+  <test thread-count="5" name="ToroAndroidApp(failed)">
     <classes>
-      <class name="PracticeDemo.AppiumFramework.ToroAppFunc">
+      <class name="PracticeDemo.AppiumFramework.ToroAndroidAppTest">
         <methods>
-          <include name="Login"/>
+          <include name="Tutorial"/>
         </methods>
-      </class> <!-- PracticeDemo.AppiumFramework.ToroAppFunc -->
+      </class> <!-- PracticeDemo.AppiumFramework.ToroAndroidAppTest -->
     </classes>
-  </test> <!-- ToroMobileAppTest(failed) -->
+  </test> <!-- ToroAndroidApp(failed) -->
 </suite> <!-- Failed suite [Suite] -->

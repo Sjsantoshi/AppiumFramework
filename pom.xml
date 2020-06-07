@@ -16,7 +16,7 @@
       <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
-
+   
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -87,10 +87,8 @@
     <version>2.22.2</version>
 </dependency>
 
-  </dependencies>
-  
-  
 
+  </dependencies>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -133,7 +131,8 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
-      </plugins>
+        
+    </plugins>
     </pluginManagement>
   </build>
 </project>
